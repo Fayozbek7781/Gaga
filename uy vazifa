@@ -1,0 +1,98 @@
+# 1 -Misol:
+# import json
+# f=open("data.json","r")
+# data=json.load(f)
+
+# branches=data["branches"]
+
+# print("Branchlar:")
+# for b in branches:
+#     print(b["name"])
+# f.close()
+#==================================
+
+# 2 -misol:
+# import json
+# f=open("data.json","r")
+# data=json.load(f)
+
+# branches=data["branches"]
+# print("\nPython oqituvchilari:")
+# for b in branches:
+#     for t in b["teachers"]:
+#         if t["subject"] == "Python":
+#             print(t["name"], b["name"], t["experience"])
+# f.close()
+#===================================================================
+
+# 3- Misol:
+
+# import json
+# f = open("data.json", "r")
+# data = json.load(f)
+
+
+# branches = data["branches"]
+# print("\nOquvchilar soni:")
+# for b in branches:
+#     print(b["name"], len(b["students"]))
+
+
+# f.close()
+#===================================================
+
+# 4- Misol
+# import json
+# f = open("data.json", "r")
+# data = json.load(f)
+# branches = data["branches"]
+# eng = None
+
+# for b in branches:
+#     for s in b["students"]:
+#         if eng is None or s["payment"] > eng["payment"]:
+#             eng = s
+#             branch_name = b["name"]
+
+# print("\nEng katta payment:")
+# print(eng["name"], branch_name)
+
+# f.close()
+#===================================================
+
+# 5-Misol:
+# import json
+# f = open("data.json", "r")
+# data = json.load(f)
+# branches = data["branches"]
+# print("\nUmumiy payment:")
+# for b in branches:
+#     jami = 0
+#     for s in b["students"]:
+#         jami += s["payment"]
+#     print(b["name"], jami)
+#==========================================================
+
+# 6- Misol:
+# import json
+# f = open("data.json", "r")
+# data = json.load(f)
+# branches = data["branches"]
+# print("\nTajriba > 5:")
+# for b in branches:
+#     for t in b["teachers"]:
+#         if t["experience"] > 5:
+#             print(t["name"], b["name"])
+
+#=============================================================
+# 7- Misol:
+# import json
+# f = open("data.json", "r")
+# data = json.load(f)
+# branches = data["branches"]
+# print("\nPython bor branchlar:")
+# for b in branches:
+#     for s in b["students"]:
+#         if s["course"] == "Python":
+#             print(b["name"])
+#             break
