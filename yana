@@ -1,0 +1,73 @@
+# 1- Masala:
+
+# def check(arr):
+#     d = {}
+#     for i in arr:
+#         d[i] = d.get(i, 0) + 1
+    
+#     v = list(d.values())
+#     return len(v) == len(set(v))
+
+# print("Sonlarni kiriting:")
+# arr = list(map(int, input().split()))
+# print(check(arr))
+#=========================================================
+
+# 2 - Masala:
+ 
+# def count_nums(word):
+#     s = ""
+#     st = set()
+    
+#     for i in word:
+#         if i.isdigit():
+#             s += i
+#         else:
+#             if s != "":
+#                 st.add(int(s))
+#                 s = ""
+    
+#     if s != "":
+#         st.add(int(s))
+    
+#     return len(st)
+
+# print("Matn kiriting:")
+# word = input()
+# print(count_nums(word))
+#===========================================================
+
+# 3-  Masala:
+
+# def smaller(nums):
+#     res = []
+#     for i in range(len(nums)):
+#         c = 0
+#         for j in range(len(nums)):
+#             if nums[j] < nums[i]:
+#                 c += 1
+#         res.append(c)
+#     return res
+
+# print("Sonlarni kiriting:")
+# nums = list(map(int, input().split()))
+# print(smaller(nums))
+
+#==========================================================
+
+# 4 -Misol:
+
+# import re
+
+# def sonlar_tartibi(matn):
+#     sonlar = [int(s) for s in re.findall(r'\d+', matn)]
+#     if len(sonlar) < 2:
+#         return True
+#     for i in range(len(sonlar) - 1):
+#         if sonlar[i] >= sonlar[i+1]:
+#             return False
+#     return True
+
+# kiritilgan_matn = input("Iltimos, matn kiriting: ")
+# natija = sonlar_tartibi(kiritilgan_matn)
+# print(f"Matndagi sonlar o'sish tartibida: {natija}")
